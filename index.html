@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reliable cargo transport services. Safe and fast delivery."
+    />
+    <title>Cargo Express</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <head>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        rel="stylesheet"
+      />
+    </head>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">Cargo <span>Express</span></div>
+        <nav>
+          <ul>
+            <li><a href="#advantages">Advantages</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <a href="tel:+380999999999">+380 99 999 99 99</a>
+        </div>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Reliable Cargo Transport</h1>
+        <p>
+          We deliver quickly, safely, and on time. No matter the size or weight
+          of your cargo, we ensure professional handling and secure
+          transportation.
+        </p>
+        <button onclick="orderNow()">Order Transport</button>
+      </div>
+    </section>
+
+    <section id="advantages">
+      <h2>Our Advantages</h2>
+      <div class="advantages-container">
+        <div class="advantage">
+          <h3>Experienced Drivers</h3>
+          <p>
+            Our team of highly skilled and experienced drivers ensures the safe
+            and timely delivery of your goods. With years of expertise in
+            logistics and transportation, they are trained to handle various
+            types of cargo, navigate complex routes, and adapt to different road
+            conditions. We prioritize safety, efficiency, and professionalism,
+            so you can trust us to transport your shipments with care. Whether
+            it's local or long-distance delivery, our drivers are committed to
+            providing a smooth and reliable service every step of the way.
+          </p>
+        </div>
+        <div class="advantage">
+          <h3>Cargo Insurance</h3>
+          <p>
+            We understand that your cargo is valuable, which is why we offer
+            comprehensive cargo insurance for every shipment. Our insurance
+            coverage protects your goods from unexpected events such as damage,
+            theft, or loss during transit. With our reliable insurance options,
+            you can have peace of mind, knowing that your shipment is
+            safeguarded from pickup to delivery. We are committed to providing
+            secure and worry-free transportation, ensuring your business runs
+            smoothly.
+          </p>
+        </div>
+        <div class="advantage">
+          <h3>Flexible Rates</h3>
+          <p>
+            We believe that quality transportation should be both affordable and
+            adaptable to your needs. That’s why we offer flexible pricing
+            options tailored to your shipment size, distance, and urgency.
+            Whether you need a one-time delivery or regular freight services, we
+            provide competitive rates without compromising on reliability and
+            efficiency. Get a customized quote that fits your budget and ensures
+            your cargo reaches its destination safely and on time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service">
+          <img src="./img/express-delivery.png" alt="Express Delivery" />
+          <h3>Express Delivery</h3>
+          <p>
+            Fast and reliable delivery to ensure your cargo reaches its
+            destination on time.
+          </p>
+        </div>
+        <div class="service">
+          <img src="./img/warehouse.png" alt="Warehousing" />
+          <h3>Warehousing</h3>
+          <p>
+            Secure and spacious storage solutions for your goods with real-time
+            tracking.
+          </p>
+        </div>
+        <div class="service">
+          <img
+            src="./img/international-shipping.png"
+            alt="International Shipping"
+          />
+          <h3>International Shipping</h3>
+          <p>
+            Worldwide logistics solutions with customs clearance assistance.
+          </p>
+        </div>
+        <div class="service">
+          <img src="./img/tracking.png" alt="Real-time Tracking" />
+          <h3>Real-time Tracking</h3>
+          <p>
+            Monitor your shipments in real-time with our advanced tracking
+            system.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-sec">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or need a quote? Reach out to us, and our team will
+        assist you with the best transport solutions.
+      </p>
+      <form action="/submit-form" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="tel" name="phone" placeholder="Your Phone" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>Cargo Express</h2>
+          <p>Reliable logistics solutions for your business.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="social-icon facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="social-icon instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            class="social-icon linkedin"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">
+        &copy; 2025 Cargo Express | All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
