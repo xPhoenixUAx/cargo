@@ -16,13 +16,23 @@ document.querySelector(".menu-toggle").addEventListener("click", function () {
 });
 // Покажемо модальне вікно, якщо cookie ще не прийняті
 window.onload = function() {
-  if (!localStorage.getItem('cookiesAccepted')) {
+  // Якщо cookies не були прийняті або відмовлено від них, показуємо модальне вікно
+  if (localStorage.getItem('cookiesAccepted') === null) {
     document.getElementById('cookieModal').style.display = 'flex';
+  } else if (localStorage.getItem('cookiesAccepted') === 'false') {
+    document.getElementById('cookieModal').style.display = 'flex'; // Відображаємо, якщо була відмова
   }
 
-  // Прийняття cookie
+  // Прийняття cookies
   document.getElementById('acceptCookies').addEventListener('click', function() {
-    localStorage.setItem('cookiesAccepted', 'true');
-    document.getElementById('cookieModal').style.display = 'none';
+    localStorage.setItem('cookiesAccepted', 'true'); // Зберігаємо інформацію про прийняття
+    document.getElementById('cookieModal').style.display = 'none'; // Закриваємо модальне вікно
+  });
+
+  // Відмова від cookies
+  document.getElementById('declineCookies').addEventListener('click', function() {
+    localStorage.setItem('cookiesAccepted', 'false'); // Зберігаємо інформацію про відмову
+    document.getElementById('cookieModal').style.display = 'none'; // Закриваємо модальне вікно
   });
 };
+
