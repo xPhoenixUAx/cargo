@@ -14,3 +14,15 @@ function orderNow() {
 document.querySelector(".menu-toggle").addEventListener("click", function () {
   document.querySelector("nav ul").classList.toggle("show");
 });
+// Покажемо модальне вікно, якщо cookie ще не прийняті
+window.onload = function() {
+  if (!localStorage.getItem('cookiesAccepted')) {
+    document.getElementById('cookieModal').style.display = 'flex';
+  }
+
+  // Прийняття cookie
+  document.getElementById('acceptCookies').addEventListener('click', function() {
+    localStorage.setItem('cookiesAccepted', 'true');
+    document.getElementById('cookieModal').style.display = 'none';
+  });
+};

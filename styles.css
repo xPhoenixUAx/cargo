@@ -663,3 +663,79 @@ footer {
     margin-bottom: 20px;
   }
 }
+/* Cookie Modal */
+.cookie-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.cookie-modal-content {
+  background: #1c1c1c;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-sizing: border-box; /* Додаємо для правильного врахування padding */
+}
+
+.cookie-modal p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ffcc00, #ffaa00); /* Градієнт */
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.4);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #ffd633, #ffbb33);
+  box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.7);
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0px 2px 5px rgba(255, 204, 0, 0.5);
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+  .cookie-modal-content {
+    padding: 20px;
+    width: 80%; /* Зменшуємо ширину для мобільних пристроїв */
+    max-width: 400px; /* Обмежуємо максимальну ширину */
+  }
+
+  .cookie-modal p {
+    font-size: 14px; /* Зменшуємо розмір шрифта */
+  }
+
+  .submit-btn {
+    font-size: 16px; /* Зменшуємо розмір шрифта кнопки */
+    padding: 12px 20px; /* Зменшуємо відступи кнопки */
+  }
+}
+
+
